@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 4
+#Progress monitor hint: 9
 first : all
 -include ../makefile.init
 
@@ -16,6 +16,7 @@ RM := rm -rf
 -include subdir.mk
 -include Project_Settings/Linker_Files/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk
+-include src/MCAL/subdir.mk
 -include src/subdir.mk
 -include objects.mk
 
@@ -53,14 +54,14 @@ all: warning-messages explicit-dependencies Scheduler.elf secondary-outputs
 # Tool invocations
 Scheduler.elf: $(OBJS) C:/Users/uidn8311/Documents/Programas_de_practica/NXP_Projects/Scheduler/Project_Settings/Linker_Files/S32K1xx_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #5 $@'
+	@echo 'Executing target #10 $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "Scheduler.elf" "@Scheduler.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 Scheduler.siz: $(EXECUTABLES)
-	@echo 'Executing target #6 $@'
+	@echo 'Executing target #11 $@'
 	@echo 'Invoking: Standard S32DS Print Size'
 	arm-none-eabi-size --format=berkeley $(EXECUTABLES)
 	@echo 'Finished building: $@'
