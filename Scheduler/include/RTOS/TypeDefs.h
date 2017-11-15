@@ -1,16 +1,3 @@
-/*
- * TypeDefs.h
- *
- *  Created on: 15/11/2017
- *      Author: uidn8311
- */
-
-#ifndef RTOS_TYPEDEFS_H_
-#define RTOS_TYPEDEFS_H_
-
-
-
-#endif /* RTOS_TYPEDEFS_H_ */
 /*============================================================================*/
 /*                        I BS SOFTWARE GROUP                                 */
 /*============================================================================*/

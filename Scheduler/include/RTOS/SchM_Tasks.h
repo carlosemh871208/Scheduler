@@ -55,5 +55,12 @@
 
 /* Exported functions prototypes */
 /*============================================================================*/
+void SchM_SCHM_TASKID_BKG_Task(void);
+void SchM_SCHM_TASKID_3P125MS_Task(void);
+void SchM_SCHM_TASKID_6P25MS_Task(void);
+void SchM_SCHM_TASKID_12P5MS_Task(void);
+void SchM_SCHM_TASKID_25MS_Task(void);
+void SchM_SCHM_TASKID_50MS_Task(void);
+void SchM_SCHM_TASKID_100MS_Task(void);
 
 #endif/* Notice: the file ends with a blank new line to avoid compiler warnings */

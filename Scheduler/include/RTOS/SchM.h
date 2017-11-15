@@ -43,7 +43,7 @@
 
 /* Includes */
 /*============================================================================*/
-
+#include "RTOS/SchM_Types.h"
 
 /* Constants and types */
 /*============================================================================*/
@@ -55,5 +55,9 @@
 
 /* Exported functions prototypes */
 /*============================================================================*/
+void SchM_Init(const SchM_ConfigType *SchMConfig);
+void SchM_Start(void);
+void SchM_Stop(void);
+
 
 #endif/* Notice: the file ends with a blank new line to avoid compiler warnings */
