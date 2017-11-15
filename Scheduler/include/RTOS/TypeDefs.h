@@ -1,17 +1,30 @@
+/*
+ * TypeDefs.h
+ *
+ *  Created on: 15/11/2017
+ *      Author: uidn8311
+ */
+
+#ifndef RTOS_TYPEDEFS_H_
+#define RTOS_TYPEDEFS_H_
+
+
+
+#endif /* RTOS_TYPEDEFS_H_ */
 /*============================================================================*/
 /*                        I BS SOFTWARE GROUP                                 */
 /*============================================================================*/
 /*                        OBJECT SPECIFICATION                                */
 /*============================================================================*/
 /*!
- * $Source: gpio.h $
+ * $Source: defintions.h $
  * $Revision: 1 $
  * $Author: Carlos Martinez $
  * $Date: 13/11/2017 $
  */
 /*============================================================================*/
 /* DESCRIPTION :                                                              */
-/** \General purpose inputs and outputs low level functions
+/** \definitions.h
 
 */
 /*============================================================================*/
@@ -31,58 +44,30 @@
 /*============================================================================*/
 /*        AUTHOR       |       VERSION      |           DESCRIPTION           */
 /*----------------------------------------------------------------------------*/
-/*   Carlos Martinez   |         1.1        | Low level functions             */
+/*   Carlos Martinez   |         1.1        | All types definition            */
 /*============================================================================*/
 /*                               OBJECT HISTORY                               */
 /*============================================================================*/
 /*
  * $Log: filename.h  $
   ============================================================================*/
-#ifndef RTOS_SCHM_TYPES_H_
-#define RTOS_SCHM_TYPES_H_
+#ifndef RTOS_TYPEDEFS_H_
+#define RTOS_TYPEDEFS_H_
 
 /* Includes */
 /*============================================================================*/
-#include "RTOS/TypeDefs.h"
+
 
 /* Constants and types */
 /*============================================================================*/
-/*SchM_TaskMaskType*/
-#define SCHM_MASK_3P125MS (T_UBYTE) 0x03u
-#define SCHM_MASK_6P25MS (T_UBYTE) 0x07u
-#define SCHM_MASK_12P5MS (T_UBYTE) 0x0Fu
-#define SCHM_MASK_25MS (T_UBYTE) 0x1Fu
-#define SCHM_MASK_50MS (T_UBYTE) 0x3Fu
-#define SCHM_MASK_100MS (T_UBYTE) 0x7Fu
+#define NULL (void*) 0ul
 
-/*Task ID values*/
-#define SCHM_TASKID_BKG (T_UBYTE)
-#define SCHM_TASKID_3P125MS (T_UBYTE)
-#define SCHM_TASKID_6P25MS (T_UBYTE)
-#define SCHM_TASKID_12P5MS (T_UBYTE)
-#define SCHM_TASKID_25MS (T_UBYTE)
-#define SCHM_TASKID_50MS (T_UBYTE)
-#define SCHM_TASKID_100MS (T_UBYTE)
-
-/*Task States*/
-#define SCHM_TASK_STATE_SUSPENDED (T_UBYTE)
-#define SCHM_TASK_STATE_READY (T_UBYTE)
-#define SCHM_TASK_STATE_RUNNING (T_UBYTE)
-
-/*Task ID values*/
-#define SCHM_UNINIT (T_UBYTE)
-#define SCHM_INIT (T_UBYTE)
-#define SCHM_IDLE (T_UBYTE)
-#define SCHM_RUNNING (T_UBYTE)
-#define SCHM_OVERLOAD (T_UBYTE)
-#define SCHM_HALTED (T_UBYTE)
-
-typedef struct{
-	T_UBYTE SchM_TaskMaskType;
-	T_UBYTE SchM_TaskIDType;
-	T_UBYTE SchM_TaskStateType;
-	T_UBYTE SchM_SchedulerStateType;
-}SchM_ConfigType;
+typedef unsigned char T_UBYTE;
+typedef signed char T_SBYTE;
+typedef unsigned short T_UWORD;
+typedef signed short T_SWORD;
+typedef unsigned long T_ULONG;
+typedef signed long T_SLONG;
 
 /* Exported Variables */
 /*============================================================================*/
@@ -91,4 +76,4 @@ typedef struct{
 /* Exported functions prototypes */
 /*============================================================================*/
 
-#endif/* Notice: the file ends with a blank new line to avoid compiler warnings */
+#endif  /* Notice: the file ends with a blank new line to avoid compiler warnings */
