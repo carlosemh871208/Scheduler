@@ -53,5 +53,6 @@ SUBDIRS := \
 Project_Settings/Linker_Files \
 Project_Settings/Startup_Code \
 src/MCAL \
+src/RTOS \
 src \
 

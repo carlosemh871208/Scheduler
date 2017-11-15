@@ -1,4 +1,7 @@
 "./src/main.o"
+"./src/RTOS/SchM_Tasks.o"
+"./src/RTOS/SchM_Cfg.o"
+"./src/RTOS/SchM.o"
 "./src/MCAL/wdog.o"
 "./src/MCAL/systick.o"
 "./src/MCAL/port.o"
